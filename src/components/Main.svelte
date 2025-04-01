@@ -28,7 +28,7 @@
       </p> -->
       <p class="text-base sm:text-lg md:text-xl">
         My <span class="text-violet-400">favorite tech</span> includes
-        React, Svelte,<br /> Vercel, Node.js + Notion & MongoDB!
+        React, Express,<br /> Vercel, Node.js + Notion & MongoDB!
       </p>
       <a
         class="blueShadow mx-auto lg:mr-auto text-base sm:text-lg md:text-xl poppins
