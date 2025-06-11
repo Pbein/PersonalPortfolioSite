@@ -27,4 +27,4 @@ cursor-pointer hover:border-violet-400 duration-200"
     <p class="relative z-4">Go to &rarr;</p>
 </div>
   </div> -->
-</a>"
+</a>
