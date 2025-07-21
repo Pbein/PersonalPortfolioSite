@@ -58,7 +58,7 @@
         A few of my creative endeavors.
       </h6>
       <h3 class="font-semibold text-3xl sm:text-4xl md:text-5xl">
-        Curios to <span class="poppins text-violet-400">see</span> my work?
+        Curious to <span class="poppins text-violet-400">see</span> my work?
       </h3>
     </div>
     <!-- <a
@@ -86,7 +86,7 @@
       </Step>
       <Step step={steps[2]}>
         <p>
-          I'm currently planning my next project — possibly a small app or utility that solves a personal problem. I’m using this as a chance to dive deeper into <strong class="text-violet-400">frontend development, API integration</strong>, and <strong class="text-violet-400">user-first design</strong>. Stay tuned!
+          I'm currently planning my next project — possibly a small app or utility that solves a personal problem. I'm using this as a chance to dive deeper into <strong class="text-violet-400">frontend development, API integration</strong>, and <strong class="text-violet-400">user-first design</strong>. Stay tuned!
         </p>
       </Step>
     </div>
@@ -101,7 +101,7 @@
     </div>
     <p class="mx-auto poppins font-semibold text-lg sm:text-xl md:text-2xl">I am . . .</p>
     <p class="text-center max-w-3xl mx-auto text-base sm:text-lg md:text-xl leading-relaxed text-slate-300">
-      ...a self-taught front-end developer with a passion for building intuitive and beautiful web experiences. My journey into development started with curiosity and grew into a dedication to mastering tools like <span class="text-violet-400">React</span>, <span class="text-violet-400">SvelteKit</span>, and <span class="text-violet-400">TailwindCSS</span>. I love translating ideas into functional designs that make users smile. Whether it’s crafting responsive interfaces, integrating APIs, or launching full-stack apps, I’m always looking for new challenges and opportunities to grow.
+      ...a self-taught front-end developer with a passion for building intuitive and beautiful web experiences. My journey into development started with curiosity and grew into a dedication to mastering tools like <span class="text-violet-400">React</span>, <span class="text-violet-400">SvelteKit</span>, and <span class="text-violet-400">TailwindCSS</span>. I love translating ideas into functional designs that make users smile. Whether it's crafting responsive interfaces, integrating APIs, or launching full-stack apps, I'm always looking for new challenges and opportunities to grow.
     </p>
     
     <p class="text-center max-w-3xl mx-auto text-base sm:text-lg md:text-xl leading-relaxed text-slate-300 pt-6">
