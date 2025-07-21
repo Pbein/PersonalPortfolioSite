@@ -4,7 +4,7 @@
 
 <a
   href={step.href}
-  target="_blank"
+  target={step.href && step.href.startsWith('http') ? '_blank' : undefined}
   class="p-4 sm:p-6 md:p-8 flex flex-col
 gap-4 rounded-lg border border-solid border-violet-700 text-center group
 cursor-pointer hover:border-violet-400 duration-200"

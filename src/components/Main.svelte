@@ -2,8 +2,8 @@
   import Step from "./Step.svelte";
 
   let steps = [
-    { name: "Philip Bein's Web Portfolio", icon: "fa-solid fa-briefcase" },
-    { name: "Recipe Finder App", icon: "fa-solid fa-utensils" },
+    { name: "Philip Bein's Web Portfolio", icon: "fa-solid fa-briefcase", href: "#" },
+    { name: "Recipe Finder App", icon: "fa-solid fa-utensils", href: "https://www.chompchew.com/" },
     { name: "Next Project...", icon: "fa-solid fa-diagram-project" },
   ];
 </script>
@@ -77,11 +77,7 @@
       </Step>
       <Step step={steps[1]}>
         <p>
-          Chomp Chew is a Full Stack <strong class="text-violet-400"
-            >React</strong
-          >,
-          <strong class="text-violet-400">Node.js + Express.js</strong>
-          & <strong class="text-violet-400">MongoDB</strong> CRUD application that allows users to swiftly discover a range of recipes and filter based on dietary restrictions.
+          Chomp Chew is a Full Stack <strong class="text-violet-400">Next.js 15</strong> with <strong class="text-violet-400">TypeScript</strong> and <strong class="text-violet-400">Tailwind CSS</strong> recipe finder application. Built with <strong class="text-violet-400">Supabase</strong> and <strong class="text-violet-400">PostgreSQL</strong> for the backend, featuring <strong class="text-violet-400">NextAuth</strong> authentication, <strong class="text-violet-400">OpenAI GPT-4</strong> integration, and <strong class="text-violet-400">shadcn/ui</strong> components. Includes comprehensive testing with <strong class="text-violet-400">Vitest</strong> and <strong class="text-violet-400">Playwright</strong>.
         </p>
       </Step>
       <Step step={steps[2]}>
