@@ -121,8 +121,8 @@
     </figure>
 
     <p class="text-center text-sm sm:text-base text-slate-400 max-w-2xl mx-auto -mt-12">
-      The other two run on hardware in my house, so there's no link to click —
-      happy to walk anyone through them.
+      Mission Control runs on the same Pi, so there's no link to click —
+      happy to walk anyone through it.
     </p>
   </section>
 

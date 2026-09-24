@@ -38,23 +38,6 @@ export const mailto =
 // with {@html} so technology names can carry the violet accent.
 export const projects = [
   {
-    name: "Mission Control",
-    icon: "board",
-    href: null,
-    body: `A single screen that tells me what's actually moving across every project I have
-      running. I built it because my status notes went stale within a week — so nothing on
-      this board is hand-maintained. It's derived from a ledger of captured work sessions,
-      served by a <strong class="text-violet-400">Next.js</strong> frontend over a
-      <strong class="text-violet-400">FastAPI</strong> control plane with
-      <strong class="text-violet-400">Postgres</strong> and
-      <strong class="text-violet-400">Redis</strong>, all in
-      <strong class="text-violet-400">Docker</strong> on a
-      <strong class="text-violet-400">Raspberry Pi 5</strong>. Scheduled jobs log every exit
-      code, so a cron job that quietly dies shows up on the board instead of being noticed
-      weeks later.`,
-    note: "Running daily on my own network",
-  },
-  {
     name: "OrbitSandbox",
     icon: "orbit",
     href: null,
@@ -70,6 +53,23 @@ export const projects = [
       three gates for less propellant — and closing the gap after that means trading a frozen
       burn sequence for a guidance policy.`,
     note: "Runs as a container on the Pi",
+  },
+  {
+    name: "Mission Control",
+    icon: "board",
+    href: null,
+    body: `A single screen that tells me what's actually moving across every project I have
+      running. I built it because my status notes went stale within a week — so nothing on
+      this board is hand-maintained. It's derived from a ledger of captured work sessions,
+      served by a <strong class="text-violet-400">Next.js</strong> frontend over a
+      <strong class="text-violet-400">FastAPI</strong> control plane with
+      <strong class="text-violet-400">Postgres</strong> and
+      <strong class="text-violet-400">Redis</strong>, all in
+      <strong class="text-violet-400">Docker</strong> on a
+      <strong class="text-violet-400">Raspberry Pi 5</strong>. Scheduled jobs log every exit
+      code, so a cron job that quietly dies shows up on the board instead of being noticed
+      weeks later.`,
+    note: "Running daily on my own network",
   },
   {
     name: "ChompChew",
