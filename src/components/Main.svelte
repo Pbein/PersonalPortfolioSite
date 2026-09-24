@@ -13,11 +13,11 @@
     <div
       class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10"
     >
-      <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
+      <h1 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
         Hi, I'm <span class="poppins text-violet-400">Philip</span> Bein
         <br />
         Software <span class="poppins text-violet-400">Engineer</span>
-      </h2>
+      </h1>
       <p class="text-base sm:text-lg md:text-xl">
         I build <span class="text-violet-400">systems</span> end to end — simulation
         engines,<br class="hidden sm:inline" /> APIs, automation, and the infrastructure
@@ -91,8 +91,10 @@
           aria-hidden="true"
           class="absolute -inset-2 sm:-inset-4 rounded-xl bg-violet-600/20 blur-2xl"
         />
-        <div
-          class="relative rounded-lg border border-solid border-violet-700 bg-slate-950/60
+        <a
+          href="/orbitsandbox"
+          aria-label="Read the OrbitSandbox write-up"
+          class="relative block rounded-lg border border-solid border-violet-700 bg-slate-950/60
             p-1 sm:p-2 overflow-hidden hover:border-violet-400 duration-200"
         >
           <picture>
@@ -109,7 +111,7 @@
               class="block w-full rounded"
             />
           </picture>
-        </div>
+        </a>
       </div>
 
       <figcaption class="text-center text-sm sm:text-base text-slate-400 max-w-3xl mx-auto">
@@ -117,6 +119,9 @@
         waypoint-chain scenario flown as planned, then dispersed 500 times. Every gate missed,
         and not one run reaches the target volume. Finding that out before anything flies is the
         entire point of the tool.
+        <a href="/orbitsandbox" class="text-violet-400 hover:underline whitespace-nowrap">
+          Read the write-up &rarr;
+        </a>
       </figcaption>
     </figure>
 

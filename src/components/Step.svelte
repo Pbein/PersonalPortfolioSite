@@ -1,13 +1,16 @@
 <script>
   import Icon from "./Icon.svelte";
   export let step;
+
+  // Internal routes stay in the tab; only off-site links get a new one.
+  $: external = !!step.href && /^https?:/.test(step.href);
 </script>
 
 <svelte:element
   this={step.href ? "a" : "div"}
   href={step.href || undefined}
-  target={step.href ? "_blank" : undefined}
-  rel={step.href ? "noopener noreferrer" : undefined}
+  target={external ? "_blank" : undefined}
+  rel={external ? "noopener noreferrer" : undefined}
   class="p-4 sm:p-6 md:p-8 flex flex-col
 gap-4 rounded-lg border border-solid border-violet-700 text-center group
 duration-200 hover:border-violet-400 {step.href ? 'cursor-pointer' : ''}"

@@ -40,7 +40,7 @@ export const projects = [
   {
     name: "OrbitSandbox",
     icon: "orbit",
-    href: null,
+    href: "/orbitsandbox",
     body: `An interactive 3-D workbench for planning a spacecraft maneuver sequence — and then
       finding out how often that plan actually works. The authoritative physics lives in a
       <strong class="text-violet-400">Python</strong> core; the browser is only a viewer for
@@ -52,7 +52,7 @@ export const projects = [
       planned and 500 dispersed runs reach the target volume zero times. Optimizing threads all
       three gates for less propellant — and closing the gap after that means trading a frozen
       burn sequence for a guidance policy.`,
-    note: "Runs as a container on the Pi",
+    note: "Read the write-up",
   },
   {
     name: "Mission Control",
