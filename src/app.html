@@ -2,40 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#020617" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="%sveltekit.assets%/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="%sveltekit.assets%/favicon.png" />
+    <link rel="apple-touch-icon" href="%sveltekit.assets%/apple-touch-icon.png" />
+
+    <!-- Ambient particle field. Deferred, and skipped entirely on small screens
+         or when the visitor has asked for reduced motion. -->
     <script
+      defer
       src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"
       integrity="sha512-Kef5sc7gfTacR7TZKelcrRs15ipf7+t+n7Zh6mKNJbmW+/RRdCW9nwfLn4YX0s2nO6Kv5Y2ChqgIakaC6PW09A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     %sveltekit.head%
   </head>
-  <body
-    data-sveltekit-preload-data="hover"
-    class="bg-slate-950 text-white relative"
-  >
+  <body data-sveltekit-preload-data="hover" class="bg-slate-950 text-white relative">
     <div style="display: contents" class="relative z-[1]">%sveltekit.body%</div>
-    <div class="absolute min-h-screen top-0 left-0 w-full z-[-1] opacity-70">
-      <div class="absolute inset-0" id="particles-js"></div>
-    </div>
+
+    <div
+      aria-hidden="true"
+      class="pointer-events-none fixed inset-0 z-[-1] opacity-70"
+      id="particles-js"
+    ></div>
+
     <script>
-      particlesJS.load("particles-js", "assets/particles.json", function () {
-        console.log("callback - particles.js config loaded");
+      document.addEventListener("DOMContentLoaded", function () {
+        var calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        var small = window.matchMedia("(max-width: 767px)").matches;
+        if (calm || small || typeof particlesJS === "undefined") return;
+        particlesJS.load("particles-js", "assets/particles.json");
       });
     </script>
   </body>

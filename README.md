@@ -1,38 +1,54 @@
-# create-svelte
+# philipbein.com
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Personal site — SvelteKit + Tailwind, deployed on Vercel.
 
-## Creating a project
+## Editing content
 
-If you're seeing this, you've probably already done this step. Congrats!
+All public-facing copy lives in **`src/lib/content.js`**. Hero text, project cards,
+the "currently building" list, the About paragraphs, and the contact links are all
+there. The components read from it; don't edit copy inside `.svelte` files.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+Two things in that file are conference-specific and should be revisited afterwards:
 
-# create a new project in my-app
-npm create svelte@latest my-app
+```js
+const mailSubject = "Hello from the New Mexico Tech Summit";
+const mailBody    = `Hi Philip, ...`;
 ```
 
-## Developing
+These build the prefilled `mailto:` used by the "Email me" button. Blank them or
+swap in something generic once the summit is over.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Develop
 
 ```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+npm install
+npm run dev          # http://localhost:5173
 ```
 
-## Building
-
-To create a production version of your app:
+## Build
 
 ```bash
 npm run build
+npm run preview      # note: restart it after a rebuild — it caches the bundle
 ```
 
-You can preview the production build with `npm run preview`.
+## Assets
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+| Path | What |
+|---|---|
+| `static/qr/philipbein-qr.svg` | QR used by the in-page "Show QR" modal |
+| `static/qr/philipbein-qr.png` | Same code, 1200px raster |
+| `static/qr/philip-conference-card.png` | Name + QR card, sized for a phone screen |
+| `static/og.png` / `og.jpg` | Open Graph / link-preview image (1200×630) |
+| `static/images/profile-main.webp` / `.png` | Hero avatar (optimized from `AnimatedProfilePic.png`) |
+| `static/images/philip.webp` / `.jpg` | Unused alternate: the real photo, if you ever want to swap |
+| `static/favicon.svg` | "PB" mark |
+
+All QR assets encode `https://philipbein.com` and have been decode-verified.
+
+Regenerate the QR with:
+
+```bash
+npx qrcode -t svg -e H -q 2 -d 020617ff -l ffffffff \
+  -o static/qr/philipbein-qr.svg "https://philipbein.com"
+```
