@@ -82,8 +82,46 @@
         </Step>
       {/each}
     </div>
-    <p class="text-center text-sm sm:text-base text-slate-400 max-w-2xl mx-auto -mt-10">
-      Two of these run on hardware in my house, so there's no link to click —
+    <!-- Showcase figure: the one project card with something worth looking at.
+         Framed in the same violet-border language as the cards above so it reads
+         as part of the same set rather than a pasted-in screenshot. -->
+    <figure class="flex flex-col gap-4 -mt-10">
+      <div class="relative mx-auto w-full max-w-5xl">
+        <div
+          aria-hidden="true"
+          class="absolute -inset-2 sm:-inset-4 rounded-xl bg-violet-600/20 blur-2xl"
+        />
+        <div
+          class="relative rounded-lg border border-solid border-violet-700 bg-slate-950/60
+            p-1 sm:p-2 overflow-hidden hover:border-violet-400 duration-200"
+        >
+          <picture>
+            <source srcset="images/orbitsandbox.webp" type="image/webp" />
+            <img
+              src="images/orbitsandbox.jpg"
+              alt="The OrbitSandbox workbench: a 3-D view of Earth with a planned orbit,
+                   three maneuver nodes and two target gates, flanked by vehicle and
+                   telemetry panels and a Monte Carlo results readout."
+              width="1568"
+              height="670"
+              loading="lazy"
+              decoding="async"
+              class="block w-full rounded"
+            />
+          </picture>
+        </div>
+      </div>
+
+      <figcaption class="text-center text-sm sm:text-base text-slate-400 max-w-3xl mx-auto">
+        <span class="text-violet-400 poppins">OrbitSandbox</span>, live on the Pi — the bundled
+        waypoint-chain scenario flown as planned, then dispersed 500 times. Every gate missed,
+        and not one run reaches the target volume. Finding that out before anything flies is the
+        entire point of the tool.
+      </figcaption>
+    </figure>
+
+    <p class="text-center text-sm sm:text-base text-slate-400 max-w-2xl mx-auto -mt-12">
+      The other two run on hardware in my house, so there's no link to click —
       happy to walk anyone through them.
     </p>
   </section>

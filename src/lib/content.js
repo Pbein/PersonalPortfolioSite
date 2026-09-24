@@ -65,8 +65,10 @@ export const projects = [
       sweeps scan departures, <strong class="text-violet-400">SLSQP</strong> optimizes the
       burn sequence, an <strong class="text-violet-400">extended Kalman filter</strong>
       handles navigation, and <strong class="text-violet-400">Monte Carlo</strong> dispersion
-      runs over all of it. In the bundled scenario, a plan that threads every gate on paper
-      still succeeds only about 81% of the time once dispersed.`,
+      runs over all of it. That last layer is the point: fly the bundled scenario exactly as
+      planned and 500 dispersed runs reach the target volume zero times. Optimizing threads all
+      three gates for less propellant — and closing the gap after that means trading a frozen
+      burn sequence for a guidance policy.`,
     note: "Runs as a container on the Pi",
   },
   {
