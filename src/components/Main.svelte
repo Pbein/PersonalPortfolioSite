@@ -52,17 +52,14 @@
       </div>
     </div>
     <div class="relative shadow-2xl grid place-items-center">
-      <picture>
-        <source srcset="images/profile-main.webp" type="image/webp" />
-        <!-- No width/height attributes: they act as presentational size hints and,
-             with object-cover, crop this portrait image inside a landscape box. -->
-        <img
-          src="images/profile-main.png"
-          alt="Illustrated portrait of Philip Bein"
-          fetchpriority="high"
-          class="object-cover z-[2] max-h-[70vh]"
-        />
-      </picture>
+      <!-- No width/height attributes: they act as presentational size hints and,
+           with object-cover, crop this portrait image inside a landscape box. -->
+      <img
+        src="images/profile-main.webp"
+        alt="Illustrated portrait of Philip Bein"
+        fetchpriority="high"
+        class="object-cover z-[2] max-h-[70vh]"
+      />
     </div>
   </section>
 

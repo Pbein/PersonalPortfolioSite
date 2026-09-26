@@ -40,7 +40,7 @@ npm run preview      # note: restart it after a rebuild — it caches the bundle
 | `static/qr/philipbein-qr.png` | Same code, 1200px raster |
 | `static/qr/philip-conference-card.png` | Name + QR card, sized for a phone screen |
 | `static/og.png` / `og.jpg` | Open Graph / link-preview image (1200×630) |
-| `static/images/profile-main.webp` / `.png` | Hero avatar (optimized from `AnimatedProfilePic.png`) |
+| `static/images/profile-main.webp` | Hero avatar (900×1350) |
 | `static/images/philip.webp` / `.jpg` | Unused alternate: the real photo, if you ever want to swap |
 | `static/favicon.svg` | "PB" mark |
 
